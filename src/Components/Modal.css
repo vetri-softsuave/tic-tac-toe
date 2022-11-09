@@ -1,0 +1,35 @@
+.overlay{
+ background-color: rgba(49,49,49,0.8);
+ position: fixed;
+ top:0;
+ left:0;
+ bottom: 0;
+ right :0;
+ text-align: center;
+}
+
+.modal-content{
+    background-color: skyblue;
+    text-align: center;
+    width: 300px;
+    height: 200pxpx;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 150px auto;
+}
+
+.modal{
+    position: fixed;
+}
+
+.start{
+    font-size: 1.5rem;
+    border-radius: 10px;
+    background-color: brown;
+    color: #f1f1ff;
+}
+
+.start:hover{
+    background-color: rgb(68, 4, 4);
+}
