@@ -1,16 +1,20 @@
-import React,{useState} from "react";
+import React from "react";
 import Board from "./Components/Board";
 import Modal from "./Components/Modal";
-import './App.css';
+import { PositionContextProvider } from "./Components/context/position-context";
+import "./App.css";
+import Player from "./Components/Player";
 
 const App = () => {
-  const [positions,setPositions] = useState(['','','','','','','','','']);
   return (
-    <div className="container">
-      <h2>tic tac toe</h2>
-      <Modal show={true}/>
-      <Board/>
-    </div>
+    <PositionContextProvider>
+      <div className="container">
+        <h2>tic tac toe</h2>
+        <Modal show={true} />
+        <Board />
+        <Player/>
+      </div>
+    </PositionContextProvider>
   );
 };
 
